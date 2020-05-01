@@ -8,7 +8,26 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <h1>SORTING HAT</h1>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to Hoggy Hoggy Warts!</h1>
+    <p class="lead">The Sorting Hat, now animated, was able to sort and divide the students into the Hogwarts Houses, and continued to do so for a millennium, passed down to each new Headmasters or Headmistress of the school. When not in use, it is placed on a shelf in the current Headmaster's or Headmistress's office.</p>
+    <hr class="my-4">
+    <p></p>
+    <p class="lead">
+    <button id="sorting" class="btn btn-primary btn-lg" href="#" role="button">Lets start sorting!</button>
+    </p>
+</div>
+
+  <form class="hide" id="form">
+    <div class="form-group">
+      <label for="exampleInputEmail1">student name:</label>
+      <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp">
+      <button type="submit" class="btn btn-primary" id="addStudentBtn">Add Student</button>
+    </div>
+  </form>
+
+<div id="students"></div>
 
   <script src="./main.js"></script>
 </body>
