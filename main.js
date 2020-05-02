@@ -23,6 +23,23 @@ const studentBuilder = (arrayToPrint) => {
     printToDom('students', domString)
         };
 
+// displayForm function that calls the element form by id and uses the method to remove the class hide 
+const displayForm = () => {
+  const form = document.getElementById('form');
+  form.classList.toggle('hide');
+}
+
+// event listener function that calls the method by id and uses the method event listener
+const eventListener = () => {
+  document.getElementById('sorting').addEventListener('click',displayForm);
+}
+
+
+//initial function that contains all functions 
+const init = () => {
+  eventListener();
+}
+ 
         
 //call initial function
 init();
